@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import axios from "axios";
+import axios from 'axios';
 import './App.css';
 
 function App() {
@@ -11,10 +11,13 @@ function App() {
   const [filterStatus, setFilterStatus] = useState("all");
   const usersPerPage = 5;
 
+  // Set the API URL to point to your deployed backend
+  const API_URL = 'https://server-zl3x.onrender.com/users';
+
   // Fetch all users
   const getAllUsers = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/users");
+      const res = await axios.get(API_URL);
       setUsers(res.data);
       setFilteredUsers(res.data);
     } catch (error) {
@@ -66,7 +69,7 @@ function App() {
     const isConfirm = window.confirm("Are you sure you want to delete this user?");
     if (isConfirm) {
       try {
-        await axios.delete(`http://localhost:8000/users/${id}`);
+        await axios.delete(`${API_URL}/${id}`);
         console.log("User deleted successfully");
         getAllUsers(); // Refresh the user list after deletion
       } catch (error) {
@@ -108,11 +111,11 @@ function App() {
     try {
       if (userData.id) {
         // Update existing user
-        const response = await axios.patch(`http://localhost:8000/users/${userData.id}`, userData);
+        const response = await axios.patch(`${API_URL}/${userData.id}`, userData);
         console.log("User updated:", response.data);
       } else {
         // Add new user
-        const response = await axios.post("http://localhost:8000/users", userData);
+        const response = await axios.post(API_URL, userData);
         console.log("User added:", response.data);
       }
       closeModal(); // Close modal and refresh user list
