@@ -16,27 +16,32 @@ This is a simple React application that allows users to view, create, update, an
    ```
 
 3. Install dependencies:
+      Backend dependencies
    ```
-   Backend dependencies
       npm install
       npm i nodemon -D
-   frontend dependencies
+   ```
+      frontend dependencies
+   ```
       npm create vite@latest user
       npm install
       npm i axios
    ```
 
-4. Run the app:
+5. Run the app:
+      after the installation
+      navigate to the server code files
    ```
-   after the installation
-   navigate to the server code files
-   npm start
-   the server will start running
+      npm start
+   ```
+      the server will start running
 
    then navigate to the frontend folder in this case the folder named user
-   npm run dev
-   the project will start run in your localhost
    ```
+   npm run dev
+   ```
+   the project will start run in your localhost
+   
 
 
 
