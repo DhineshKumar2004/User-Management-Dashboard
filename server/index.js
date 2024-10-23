@@ -11,7 +11,7 @@ const dataFilePath = path.join(__dirname, "data.json");
 // Middleware to parse JSON bodies
 app.use(express.json());
 
-// CORS setup for your Netlify deployment
+// CORS setup for Netlify deployment
 app.use(cors({
     origin: "https://neon-pothos-1a2c00.netlify.app", // Ensure no trailing slash here
     methods: ["GET", "POST", "PATCH", "DELETE"],

@@ -11,7 +11,7 @@ function App() {
   const [filterStatus, setFilterStatus] = useState("all");
   const usersPerPage = 5;
 
-  // Set the API URL to point to your deployed backend
+  // Set the API URL to point the deployed backend
   const API_URL = 'https://server-zl3x.onrender.com/users';
 
   // Fetch all users
