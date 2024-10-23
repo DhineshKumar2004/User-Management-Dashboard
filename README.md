@@ -47,4 +47,5 @@ This is a simple React application that allows users to view, create, update, an
 
 ## Live Demo
 by using this link you can view,add,edit,delete user details or Create,Read,Update,Delete (CRUD operations)
-[Live Demo Link](https://neon-pothos-1a2c00.netlify.app/)
+[Live Demo Link](https://neon-pothos-1a2c00.netlify.app/) after clicking the link please wait for 10 seconds until the data is fetched from the backend
+
