@@ -7,6 +7,7 @@ This is a simple React application that allows users to view, create, update, an
 1. Clone the repository:
    ```
    git clone https://github.com/your-username/User-Management-Dashboard.git
+   downnload the project folder
    ```
 
 2. Navigate to the project directory:
@@ -16,15 +17,25 @@ This is a simple React application that allows users to view, create, update, an
 
 3. Install dependencies:
    ```
-   npm install
-   npm i axios
-   npm i nodemon -D
-   npm create vite@latest user
+   Backend dependencies
+      npm install
+      npm i nodemon -D
+   frontend dependencies
+      npm create vite@latest user
+      npm install
+      npm i axios
    ```
 
 4. Run the app:
    ```
+   after the installation
+   navigate to the server code files
    npm start
+   the server will start running
+
+   then navigate to the frontend folder in this case the folder named user
+   npm run dev
+   the project will start run in your localhost
    ```
 
 
